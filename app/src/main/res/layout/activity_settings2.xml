@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <Switch
+        android:id="@+id/switchNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anuphan"
+        android:text="Enable Notifications"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anuphan"
+        android:text="Settings"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Spinner
+        android:id="@+id/spinCurrency"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:entries="FNB"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <TextView
+        android:id="@+id/tvCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anuphan"
+        android:text="Choose currency"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="339dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBank"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:id="@+id/tvSyncBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anuphan"
+        android:text="Select Bank"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <Button
+        android:id="@+id/btnSyncData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anuphan"
+        android:text="Sync Data"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

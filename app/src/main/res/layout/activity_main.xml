@@ -4,103 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#041E35"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="112dp"
-        android:fontFamily="@font/anuphan"
-        android:text="@string/welcome_user"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="271dp"
-        android:layout_height="208dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:ignore="TextSizeCheck"
-        tools:listitem="@layout/recycler_view_item" />
 
     <Button
         android:id="@+id/btnAddExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/add_expense"
+        android:text="Finacial Overview"
+        android:backgroundTint="@color/darkblue"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="469dp" />
 
     <Button
         android:id="@+id/btnViewTransactions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/darkblue"
         android:text="@string/view_transactions"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddExpense" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="268dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="387dp"
         android:layout_height="66dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#374151"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textWelcome">
+        tools:layout_editor_absoluteY="131dp">
 
         <TextView
             android:id="@+id/Balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/balance_r0_00"
+            android:text="Balance:R10 000"
+            android:textColor="#FAF8F8"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="366dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewTransactions" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/darkblue"
         android:text="@string/set_budget"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/btnViewTransactions"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="268dp" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/recent_trasactions"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        android:text="Log Off"
+        android:backgroundTint="@color/darkblue"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:backgroundTint="@color/darkblue"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="81dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

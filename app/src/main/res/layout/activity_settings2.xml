@@ -4,76 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#041E35"
     tools:context=".Settings">
 
     <Switch
         android:id="@+id/switchNotifications"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/anuphan"
         android:text="Enable Notifications"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="204dp" />
+        android:textColor="#F6F4F4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
 
     <TextView
         android:id="@+id/tvSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/anuphan"
         android:text="Settings"
+        android:textColor="#FDFBFB"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="74dp" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinCurrency"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:dropDownWidth="wrap_content"
         android:entries="FNB"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrency" />
 
     <TextView
         android:id="@+id/tvCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/anuphan"
+        android:shadowColor="@color/white"
         android:text="Choose currency"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="339dp" />
+        android:textColor="#FAF5F5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchNotifications" />
 
     <Spinner
         android:id="@+id/spinnerBank"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSyncBank" />
 
     <TextView
         android:id="@+id/tvSyncBank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/anuphan"
         android:text="Select Bank"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="488dp" />
+        android:textColor="#FFFEFE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinCurrency" />
 
     <Button
         android:id="@+id/btnSyncData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/anuphan"
         android:text="Sync Data"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="588dp" />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBank" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

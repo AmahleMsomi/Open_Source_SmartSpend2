@@ -4,52 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#081E35"
     tools:context=".Landing">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/anuphan"
         android:gravity="center"
         android:text="@string/welcome_to_smartspend"
         android:textColor="#FFFCFC"
         android:textColorHint="#FAF3F3"
-        android:textSize="24sp"
+        android:textSize="55sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="232dp"
-        android:layout_height="446dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/smart"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="@string/log_in"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Welcome" />
 
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/sign_up"
+        android:backgroundTint="@color/darkblue"
+        android:text="Register"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="345dp"
+        android:layout_height="425dp"
+        app:srcCompat="@drawable/welcomepage"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="396dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/darkblue"
+        android:text="Log In"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="578dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

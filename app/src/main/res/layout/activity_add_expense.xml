@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#041E35"
     tools:context=".addExpense">
 
     <androidx.cardview.widget.CardView
@@ -16,54 +17,87 @@
 
     <Spinner
         android:id="@+id/spCategory"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_width="386dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/design_default_color_background"
+        android:backgroundTint="@color/white"
+        android:dropDownSelector="@color/white"
+        android:foregroundTint="#FAF6F6"
         android:spinnerMode="dropdown"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etExpenseName" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
         android:id="@+id/btnSaveExpense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="131dp"
+        android:layout_height="71dp"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="@font/anuphan"
         android:text="Save"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spCategory" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="452dp" />
 
     <TextView
         android:id="@+id/tvAddNewExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="44dp"
-        android:text="Add New Expense"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/anuphan"
+        android:text="Savings Goals"
+        android:textColor="#FDFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
+        android:fontFamily="@font/anuphan"
         android:inputType="text"
-        android:text="Enter Amount"
+        android:text="Savings Name:"
+        android:textColor="#FBF8F8"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <EditText
         android:id="@+id/etExpenseName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
+        android:fontFamily="@font/anuphan"
         android:inputType="text"
-        android:text="Expense Name"
+        android:text="Goal Amount:"
+        android:textColor="#FFFBFB"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAmount" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/anuphan"
+        android:text="Category"
+        android:textColor="#F4EDED"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

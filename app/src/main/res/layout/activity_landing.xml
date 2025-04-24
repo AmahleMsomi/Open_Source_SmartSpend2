@@ -25,7 +25,7 @@
         tools:text="Welcome" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/LandingPageSignUpbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -43,7 +43,7 @@
         tools:layout_editor_absoluteY="134dp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/LandingPageLoginbtn"
         android:layout_width="396dp"
         android:layout_height="43dp"
         android:backgroundTint="@color/darkblue"

@@ -35,21 +35,23 @@
         android:id="@+id/btnSaveExpense"
         android:layout_width="131dp"
         android:layout_height="71dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="@color/darkblue"
         android:fontFamily="@font/anuphan"
         android:text="Save"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
 
     <TextView
         android:id="@+id/tvAddNewExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/anuphan"
-        android:text="Savings Goals"
+        android:text="Expenses"
         android:textColor="#FDFAFA"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -99,5 +101,31 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etExpenseName" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Description"
+        android:textColor="#FAF5F5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCategory" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Start and End date"
+        android:textColor="#FDF9F9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

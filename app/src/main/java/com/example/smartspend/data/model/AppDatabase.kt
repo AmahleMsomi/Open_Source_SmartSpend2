@@ -8,8 +8,8 @@ import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.internal.synchronized
 
 @Database (
-    entities = [User::class] ,
-    version = 1,
+    entities = [User::class, Category::class, Expense::class] ,
+    version = 2,
     exportSchema = false
 )
 
@@ -19,6 +19,9 @@ abstract class AppDatabase : RoomDatabase() {
     // DAOs provide methods for performing CRUD (Create, Read, Update, Delete) operations on the corresponding tables.
 
     abstract fun userDao(): UserDao  // Returns the DAO for the User table. Operations related to users (e.g., registration) are performed here.
+    abstract fun categoryDao(): CategoryDao
+    abstract fun expenseDao(): ExpenseDao
+
 
 
     // Companion object to ensure that the database instance is a singleton.

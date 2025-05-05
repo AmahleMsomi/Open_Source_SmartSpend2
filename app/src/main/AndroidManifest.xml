@@ -29,10 +29,10 @@
             android:exported="false" />
 
         <activity
-            android:name=".DebtTracking"
+            android:name=".ExpenseTracking"
             android:exported="false" />
         <activity
-            android:name=".transactionHistory"
+            android:name=".Savings"
             android:exported="false" />
         <activity
             android:name=".addExpense"

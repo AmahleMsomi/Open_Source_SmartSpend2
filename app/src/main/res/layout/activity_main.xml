@@ -12,70 +12,33 @@
         android:id="@+id/btnAddExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finacial Overview"
-        android:backgroundTint="@color/darkblue"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="469dp" />
-
-    <Button
-        android:id="@+id/btnViewTransactions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
         android:backgroundTint="@color/darkblue"
-        android:text="@string/view_transactions"
+        android:text="ADD EXPENSE"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="268dp" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="387dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        app:cardBackgroundColor="#374151"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="131dp">
+    <Button
+        android:id="@+id/btnAddSavings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        <TextView
-            android:id="@+id/Balance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Balance:R10 000"
-            android:textColor="#FAF8F8"
-            android:textSize="16sp" />
-    </androidx.cardview.widget.CardView>
+        android:backgroundTint="@color/darkblue"
+        android:text="ADD SAVINGS"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="373dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnViewExpenes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/darkblue"
-        android:text="@string/set_budget"
+        android:text="VIEW EXPENSE"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="237dp"
         tools:layout_editor_absoluteY="268dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log Off"
-        android:backgroundTint="@color/darkblue"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="600dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Expenses"
-        android:backgroundTint="@color/darkblue"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="469dp" />
 
     <ImageView
         android:id="@+id/imageView4"
